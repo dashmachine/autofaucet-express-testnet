@@ -18,7 +18,7 @@
   "homepage": "https://github.com/dashmachine/autofaucet-express#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "dash": "^3.16.1",
+    "dash": "^3.16.2",
     "express": "^4.17.1"
   }
 }
