@@ -17,6 +17,7 @@ app.use(cors());
 
 const clientOpts = {
     network: 'evonet',
+    dapiAddresses: ['54.184.71.154:3000'],
     wallet: {
         mnemonic: "runway squeeze away eternal hope slice fatal tooth color alert bird upper"
     }
