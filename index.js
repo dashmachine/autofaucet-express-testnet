@@ -1,6 +1,6 @@
 const express = require('express')
 
-const port = 5050
+const port = 5051
 
 const Dash = require('dash');
 
@@ -16,16 +16,16 @@ const bigDripAmount = 100000000;
 app.use(cors());
 
 const clientOpts = {
-    network: 'evonet',
-    dapiAddresses: ['54.184.71.154:3000'],
     wallet: {
-        mnemonic: "runway squeeze away eternal hope slice fatal tooth color alert bird upper"
+        mnemonic: "slide chase curve vehicle curious auction kite host chaos fringe episode alone"
     }
 };
 
 async function init() {
     client = new Dash.Client(clientOpts);
+    console.log('syncing account...');
     account = await client.wallet.getAccount();
+    console.log('account sync done.');
 }
 
 async function getDrip(amount, toAddress) {
